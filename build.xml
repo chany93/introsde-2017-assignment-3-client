@@ -123,7 +123,7 @@
 						</fileset>
 					</classpath>
 				</java>
-
+	</target>
 	<!-- make sure you have created first the WebContent folder, including a META-INF folder, WEB-INF/web.xml file and WEB-INF/lib folder --> 
 	<target name="create.war" depends="compile">
 		<war destfile="assignment-sde-03-server.war" webxml="${web.dir}/WebContent/WEB-INF/web.xml">
