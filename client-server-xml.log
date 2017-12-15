@@ -1,0 +1,153 @@
+Dec 15, 2017 3:26:12 PM introsde.assignment3.client.PeopleClient xmlToLog
+INFO: Calling https://assignsde3.herokuapp.com/ws/people?wsdl
+
+
+
+Method #1: readPersonList()
+Paramenter: None
+Response: 
+- Person 1 in the list ==> Gennaro
+  
+- Person 3 in the list ==> Paolo
+  - Activity 5 => Watch movies
+  - Activity 4 => Running
+  - Activity 6 => Party
+  
+- Person 7 in the list ==> Roberto
+  - Activity 8 => Visiting
+  - Activity 9 => Football
+  
+- Person 10 in the list ==> Giovanni
+  - Activity 11 => Videogames
+  - Activity 653 => Dance
+  - Activity 703 => Dance
+  
+- Person 12 in the list ==> Damiano
+  - Activity 14 => Chat
+  - Activity 15 => Cycling
+  - Activity 13 => Learning a language
+  
+
+=============================
+
+Method #2: readPerson(long id)
+Paramenter: (3)
+Response: 
+Name: Paolo
+Lastname: Bianchi
+Birthdate: 1994-02-10
+Preferences: 
+  Id:  5
+  Name: Watch movies
+  Description: Whatch Harry Potter
+  Place: Milan
+  Type: ENTERTAINMENT
+  Startdate: 1999-09-26T00:00:00.0
+  Rating: 4
+Id:  4
+  Name: Running
+  Description: Running in the forest
+  Place: Trento
+  Type: SPORT
+  Startdate: 2000-11-02T00:00:00.0
+  Rating: 3
+Id:  6
+  Name: Party
+  Description: Organizing parties
+  Place: Home
+  Type: SOCIAL
+  Startdate: 2005-02-30T00:00:00.0
+  Rating: 1
+
+=============================
+
+Method #3: updatePerson(Person p)
+Paramenter: (p with id 1)
+Response: 
+Name changed to: Gennaro
+=============================
+
+Method #4: createPerson(Person p)
+Paramenter: (new person p)
+Response: 
+Name: Valerio
+Lastname: Pelo
+Birthdate: 1995-04-12
+Preferences: 
+  Id:  705
+  Name: Jump
+  Description: Jumping on the ground
+  Place: Dance Floor
+  Type: ENTERTAINMENT
+  Startdate: 2000-03-29T00:00:00.0
+  Rating: 4
+
+=============================
+
+Method #5: deletePerson(long id)
+Paramenter: (id of person create in method#4)
+Response: 
+Person deleted 
+
+=============================
+
+Method #6: readPersonPreferencesByType(Long id, String activity_type)
+Paramenter: (7, Sport)
+Response: 
+Activity 9 in the list ==> Football
+=============================
+
+Method #7: readPreferences()
+Paramenter: None
+Response: 
+  Activity 2 in the list ==> Swimming
+  Activity 5 in the list ==> Watch movies
+  Activity 4 in the list ==> Running
+  Activity 6 in the list ==> Party
+  Activity 8 in the list ==> Visiting
+  Activity 9 in the list ==> Football
+  Activity 11 in the list ==> Videogames
+  Activity 14 in the list ==> Chat
+  Activity 15 in the list ==> Cycling
+  Activity 13 in the list ==> Learning a language
+  Activity 102 in the list ==> Working
+  Activity 351 in the list ==> Running
+  Activity 401 in the list ==> Working
+  Activity 653 in the list ==> Dance
+  Activity 703 in the list ==> Dance
+  
+=============================
+
+Method #8: readPersonPreferencesById(long id, long activity_id)
+Paramenter: (10, 11)
+Response: 
+Activity with id: 11 => Videogames
+
+=============================
+
+Method #9:  savePersonPreferences(Long id, Activity activity)
+Paramenter: (10, newAct)
+Response: 
+Activity 653 in the list ==> DanceActivity 703 in the list ==> DanceActivity 706 in the list ==> Dance
+=============================
+
+Method #10: updatePersonPreferences(Long id, Activity activity)
+Paramenter: (10, a random activity of the person) 
+Response: 
+Activity changed.... new name: Videogaming
+
+=============================
+
+Method #11: evaluatePersonPreferences(Long id, Activity activity, int value)
+Paramenter: (3, 4, 3)
+Response: 
+Activity: Running of person with id: 3 gets an evaluation of 3 out of 5
+
+=============================
+
+Method #12: getBestPersonPreferences(long id)
+Paramenter: 1
+Response: 
+Best activity 15 in the list ==> Cycling
+Best activity 13 in the list ==> Learning a language
+
