@@ -42,4 +42,4 @@ To run the clients execute this command from terminal (inside the project's dire
 it will run the program and it will create the __client-server-xml.log__ inside the root directory.
 
 ## 4. Additional Notes
-If there is an error the client stops.
+If there is an error the client stops. it won't show the activities of person with id 1 (somethig is happening which delete de idPerson inside the activity entity, just for this person)
