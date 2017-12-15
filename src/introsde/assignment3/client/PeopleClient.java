@@ -90,11 +90,13 @@ public class PeopleClient {
 	       			+ "Paramenter: (new person p)\n"
 	       			+ "Response: \n";
 	       
+	        //creating new person
 	        p = new Person();
 	        p.setFirstname("Valerio");
 	        p.setLastname("Pelo");
 	        p.setBirthdate("1995-04-12");
 	      
+	        	//creating new activity
 	        Activity a = new Activity();	        
 	        a.setName("Jump");
 	        a.setDescription("Jumping on the ground");
@@ -133,9 +135,7 @@ public class PeopleClient {
 	 					+ "Rating: " + map.get(i).getValue() + "\n";
 	 					i++;  	 				
 	 		}
-        		
-	        
-	       
+        		       
 	        
 	        out = out + "\n=============================\n";
 	        
@@ -273,10 +273,11 @@ public class PeopleClient {
 	      
 		    
 	        xmlToLog(out);
-	        System.out.println(out);
+	        //System.out.println(out);
 	        
 	    }
 	  
+	  //creates log file
 	  public static void xmlToLog(String text) {
 		 	
 		    Logger logger = Logger.getLogger("MyLog");
