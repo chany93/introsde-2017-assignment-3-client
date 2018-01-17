@@ -76,11 +76,10 @@ public class PeopleClient {
 	       			+ "Response: \n";
 	        
 	        p = people.readPerson(1);
-		String fName = p.getFirstname;
-	        p.setFirstname("Marco");
+	        p.setFirstname("Gennaro");
 	        Person person = people.updatePerson(p);
 	        
-	        out = out + "Name changed from: " + fName + " to: " + person.getFirstname();
+	        out = out + "Name changed to: " + person.getFirstname();
 	        
 	    
 	        
